@@ -1,0 +1,134 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  margin: 15px auto;
+  max-width: 1200px; 
+}
+
+img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto; 
+  display: block; 
+  object-fit: cover;
+}
+
+/* Headings */
+h1 {
+  padding: 10px 0;
+  font-size: 2rem;
+  color: #333; 
+}
+
+h2 {
+  color: rgb(160, 100, 100);
+  font-size: 1.5rem; 
+}
+
+
+.prep-time {
+  background-color: rgb(255, 238, 239);
+  padding: 25px;
+  border-radius: 10px;
+  margin: 15px 0;
+  line-height: 1.6; 
+
+.prep-time h2 {
+  color: rgb(158, 78, 158);
+  margin-bottom: 10px;
+}
+
+.prep-time li::marker {
+  color: rgb(158, 78, 158);
+}
+}
+
+/* Ingredients section */
+.Ingredients {
+  margin: 15px 0;
+  padding: 25px;
+  background-color: #fffcfc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for better appearance */
+  line-height: 1.6;
+}
+
+/* Instructions section */
+.ins {
+  margin: 15px 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  line-height: 1.6;
+}
+
+ul li::marker,
+ol li::marker {
+  color: rgb(160, 100, 100);
+}
+
+/* Nutritions section */
+.last h2,
+p {
+  margin: 20px 0;
+}
+
+.last table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+.last table tbody td {
+  padding: 10px 20px; 
+  line-height: 1.6;
+}
+
+.last table tbody tr {
+  border-bottom: 2px solid #aaa7a7;
+}
+
+td:nth-child(2) {
+  color: #684747;
+}
+
+
+@media (min-width: 600px) {
+  * {
+    font-size: 18px; 
+  }
+
+  .container {
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  * {
+    font-size: 20px; /* Original font size for larger screens */
+  }
+
+  .container {
+    margin: 25px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prep-time,
+  .Ingredients,
+  .ins {
+    width: 80%; /* Reduce width to make space for margins */
+    margin: 20px auto; /* Center the container with more margin */
+  }
+
+  .last table {
+    width: 100%;
+  }
+}
